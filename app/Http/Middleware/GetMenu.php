@@ -24,6 +24,7 @@ class GetMenu
         if (Auth::check()){
             $role = 'guest';
             //$role =  Auth::user()->menuroles;
+            
             $userRoles = Auth::user()->getRoleNames();
             //$userRoles = $userRoles['items'];
             $roleHierarchy = RoleHierarchy::select('role_hierarchy.role_id', 'roles.name')
@@ -39,6 +40,7 @@ class GetMenu
                     }
                 }
                 if($flag === true){
+                 
                     break;
                 }
             }

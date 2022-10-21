@@ -27,6 +27,27 @@
                                     <input class="form-control" name="name" value="{{ $role->name }}" type="text"/>
                                 </td>
                             </tr>
+                            <tr>
+                              <th>Permissions</th>
+                              <td>
+                                <div class="form-check checkbox mt-3">
+                                  <input class="form-check-input" type="checkbox" value="true" name="read" checked>
+                                  <label class="form-check-label">Enable Show button in table</label>
+                                </div>
+                                <div class="form-check checkbox">
+                                  <input class="form-check-input" type="checkbox" value="true" name="edit" checked>
+                                  <label class="form-check-label">Enable Edit button in table</label>
+                                </div>
+                                <div class="form-check checkbox">
+                                  <input class="form-check-input" type="checkbox" value="true" name="add" checked>
+                                  <label class="form-check-label">Enable Add button in table</label>
+                                </div>
+                                <div class="form-check checkbox mb-3">
+                                  <input class="form-check-input" type="checkbox" value="true" name="delete" checked>
+                                  <label class="form-check-label">Enable Delete button in table</label>
+                                </div>
+                              </td>
+                            </tr>
                         </tbody>
                     </table>
                     <button class="btn btn-primary" type="submit">Save</button>
